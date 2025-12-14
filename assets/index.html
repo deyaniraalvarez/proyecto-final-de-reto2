@@ -2,27 +2,91 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - AboutHTML</title>
+    <title>Shop | Proyecto Reto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="IndexHTML.html">Mi Web</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="AboutHTML.html">Acerca de</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ContactHTML.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ShopHTML.html">Sub Página</a></li>
-                </ul>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Mi Proyecto</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="shop.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Tienda Online 🛒</h1>
+
+    <div class="row">
+        <!-- PRODUCTO 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="assets/img/producto1.jpg" class="card-img-top" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 1</h5>
+                    <p class="card-text">$25.000</p>
+                    <button class="btn btn-primary w-100">Agregar al carrito</button>
+                </div>
             </div>
-        </nav>
-    </header>
-    <main class="container mt-5">
-        <h1>Bienvenidos a Mi Sitio Web</h1>
-        <p>Explora nuestra plataforma y conoce más sobre nosotros.</p>
-    </main>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="assets/img/producto2.jpg" class="card-img-top" alt="Producto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 2</h5>
+                    <p class="card-text">$40.000</p>
+                    <button class="btn btn-primary w-100">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="assets/img/producto3.jpg" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 3</h5>
+                    <p class="card-text">$18.000</p>
+                    <button class="btn btn-primary w-100">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    <p class="mb-0">© 2025 - Proyecto Reto 2</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
